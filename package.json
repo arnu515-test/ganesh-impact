@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build:ts": "tsc -p .",
-    "build:pkg": "pkg dist/index.js",
+    "build:pkg": "pkg dist/index.js --out-path exe",
     "clean": "rimraf dist",
     "build": "npm-run-all -s clean build:ts build:pkg",
     "dev": "nodemon --exec ts-node src/index.ts",
