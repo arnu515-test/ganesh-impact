@@ -5,7 +5,7 @@ name: Build and release with PKG
 
 on:
   push:
-    branches: [ master ]
+    tags: ["*"]
 
 jobs:
   build:
